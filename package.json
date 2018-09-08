@@ -1,0 +1,31 @@
+{
+  "name": "fetch",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-scripts": "1.1.5"
+  },
+  "proxy": {
+    "/search": {
+      "target": "https://www.google.com",
+      "changeOrigin": true
+    },
+    "/todos": {
+      "target": "http://jsonplaceholder.typicode.com/",
+      "changeOrigin": true
+    },
+    "/posts": {
+      "target": "https://jsonplaceholder.typicode.com",
+      "changeOrigin": true
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
